@@ -1,0 +1,28 @@
+{
+    "governanceApp": {
+        "businessCapability" : {
+            "home": {
+                "title": "Business Capabilities",
+                "createLabel": "Business Capability erstellen",
+                "createOrEditLabel": "Business Capability erstellen oder bearbeiten"
+            },
+            "created": "Business Capability erstellt mit ID {{ param }}",
+            "updated": "Business Capability aktualisiert mit ID {{ param }}",
+            "deleted": "Business Capability gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Business Capability {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Business Capability"
+            },
+            "commonName": "Common Name",
+            "displayName": "Display Name",
+            "description": "Description",
+            "sortOrder": "Sort Order",
+            "dateAdded": "Date Added",
+            "dateModified": "Date Modified",
+            "parent": "Parent",
+            "displayName": "Display Name"
+        }
+    }
+}

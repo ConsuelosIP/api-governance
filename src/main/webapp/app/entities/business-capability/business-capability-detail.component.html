@@ -1,0 +1,51 @@
+
+<div *ngIf="businessCapability">
+    <h2><span jhiTranslate="governanceApp.businessCapability.detail.title">Business Capability</span> {{businessCapability.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="governanceApp.businessCapability.commonName">Common Name</span></dt>
+        <dd>
+            <span>{{businessCapability.commonName}}</span>
+        </dd>
+        <dt><span jhiTranslate="governanceApp.businessCapability.displayName">Display Name</span></dt>
+        <dd>
+            <span>{{businessCapability.displayName}}</span>
+        </dd>
+        <dt><span jhiTranslate="governanceApp.businessCapability.description">Description</span></dt>
+        <dd>
+            <span>{{businessCapability.description}}</span>
+        </dd>
+        <dt><span jhiTranslate="governanceApp.businessCapability.sortOrder">Sort Order</span></dt>
+        <dd>
+            <span>{{businessCapability.sortOrder}}</span>
+        </dd>
+        <dt><span jhiTranslate="governanceApp.businessCapability.dateAdded">Date Added</span></dt>
+        <dd>
+            <span>{{businessCapability.dateAdded | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="governanceApp.businessCapability.dateModified">Date Modified</span></dt>
+        <dd>
+            <span>{{businessCapability.dateModified | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="governanceApp.businessCapability.parent">Parent</span></dt>
+        <dd>
+            <div *ngIf="businessCapability.parent">
+                <a [routerLink]="['/business-capability', businessCapability.parent?.id]">{{businessCapability.parent?.displayName}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'business-capability/'+ businessCapability.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

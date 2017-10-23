@@ -1,0 +1,15 @@
+entity BusinessCapability {
+    commonName 	String required minlength(3),
+    displayName	String required minlength(3),
+	description String,
+	sortOrder Integer,
+    dateAdded ZonedDateTime,
+    dateModified ZonedDateTime,
+}
+
+paginate BusinessCapability with pagination
+service BusinessCapability with serviceClass
+
+relationship ManyToOne {
+	BusinessCapability{parent} to BusinessCapability{displayName}
+}

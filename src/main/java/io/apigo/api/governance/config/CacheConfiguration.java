@@ -41,6 +41,8 @@ public class CacheConfiguration {
             cm.createCache(io.apigo.api.governance.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(io.apigo.api.governance.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(io.apigo.api.governance.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(io.apigo.api.governance.domain.BusinessCapability.class.getName(), jcacheConfiguration);
+            cm.createCache(io.apigo.api.governance.domain.BusinessCapability.class.getName() + ".displayNames", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
