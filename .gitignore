@@ -1,49 +1,142 @@
+######################
+# Project Specific
+######################
+/src/main/webapp/content/css/main.css
+/target/www/**
+/src/test/javascript/coverage/
 
-# Created by https://www.gitignore.io/api/maven,angular
+######################
+# Node
+######################
+/node/
+node_tmp/
+node_modules/
+npm-debug.log.*
 
-### Angular ###
-## Angular ##
-# compiled output
-/dist
-/tmp
-/app/**/*.js
-/app/**/*.js.map
+######################
+# SASS
+######################
+.sass-cache/
 
-# dependencies
-/node_modules
-/bower_components
+######################
+# Eclipse
+######################
+*.pydevproject
+.project
+.metadata
+tmp/
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.factorypath
+/src/main/resources/rebel.xml
 
-# IDEs and editors
-/.idea
+# External tool builders
+.externalToolBuilders/**
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
+# Locally stored "Eclipse launch configurations"
+*.launch
 
-# e2e
-/e2e/*.js
-/e2e/*.map
+# CDT-specific
+.cproject
 
-#System Files
+# PDT-specific
+.buildpath
+
+######################
+# Intellij
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+classes/
+
+######################
+# Visual Studio Code
+######################
+.vscode/
+
+######################
+# Maven
+######################
+/log/
+/target/
+
+######################
+# Gradle
+######################
+.gradle/
+/build/
+
+######################
+# Package Files
+######################
+*.jar
+*.war
+*.ear
+*.db
+
+######################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+######################
+# Mac OSX
+######################
 .DS_Store
+.svn
 
-### Maven ###
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
+# Thumbnails
+._*
 
-# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-!/.mvn/wrapper/maven-wrapper.jar
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
 
-# End of https://www.gitignore.io/api/maven,angular
+######################
+# Directories
+######################
+/bin/
+/deploy/
+
+######################
+# Logs
+######################
+*.log
+
+######################
+# Others
+######################
+*.class
+*.*~
+*~
+.merge_file*
+
+######################
+# Gradle Wrapper
+######################
+!gradle/wrapper/gradle-wrapper.jar
+
+######################
+# Maven Wrapper
+######################
+!.mvn/wrapper/maven-wrapper.jar
+
+######################
+# ESLint
+######################
+.eslintcache

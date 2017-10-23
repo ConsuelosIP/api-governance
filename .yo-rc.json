@@ -1,0 +1,46 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "io.apigo.api.governance",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "4.10.0",
+    "baseName": "governance",
+    "packageName": "io.apigo.api.governance",
+    "packageFolder": "io/apigo/api/governance",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "dd1b22409cc1297c437a2eff1097062a4186de80",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "applicationType": "monolith",
+    "testFrameworks": [
+      "gatling",
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "ca",
+      "fr",
+      "de",
+      "it",
+      "pt-pt"
+    ]
+  }
+}
